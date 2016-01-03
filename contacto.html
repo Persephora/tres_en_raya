@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Contacto</title>
@@ -11,13 +6,14 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="entero">
-            <div class="texto">Bienvenido a la seccion de contacto de el tres en raya</div>
-            <div id = formulario>
-                <form method="post">
-                    <input type="text"><label>Texto</label>
-                </form>
-            </div>
-        </div>
+        <form method="post">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required=""/>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="nombre@correo.com" required=""/>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escriba aqui el mensaje" required=""></textarea>
+            <input id="submit" type="submit" name="submit" value="Enviar"/>  
+        </form>
     </body>
 </html>
