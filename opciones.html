@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Opciones</title>
+        <title>Tic tac toe</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+    <header>
+    <h1>Tic Tac Toe</h1>
+    <h2>Opciones</h2>
+    </header>
         <form method="get">
+            <section id="dificultad">
+                <h3>Nivel de dificultad</h3>
             <input type="radio" name="dificultad" value="facil">Fácil
-            <input type="radio" name="dificultad" value="medio">Medio
+            <input type="radio" name="dificultad" value="medio" checked>Medio
             <input type="radio" name="dificultad" value="dificil">Díficil
+            </section>
+            <section id="modo">
+                <h3>Modo de juego</h3>
+                <input type="radio" name="modo" value="maquina" checked>Contra el ordenador
+                <input type="radio" name="modo" value="jugador">Un Jugador
+                <input type="radio" name="modo" value="dos_jugadores">Dos Jugadores
+            </section>
+            <section id="idioma">
+                <h3>Idioma</h3>
+                <input type="radio" name="idioma" value="español" checked>Español
+                <input type="radio" name="idioma" value="catalan">Catalán
+                <input type="radio" name="idioma" value="ingles">Inglés
+            </section>
         </form>
     </body>
 </html>
